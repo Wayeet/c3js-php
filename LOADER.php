@@ -1,3 +1,4 @@
 <?php
-require_once "PiaChart.php";
+require_once "UIChart.php";
+require_once "PieChart.php";
 ?>
