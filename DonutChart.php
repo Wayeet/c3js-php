@@ -37,7 +37,15 @@ var chart = c3.generate({
     donut: {
         title: '".$this->title."'
     },
-    bindto: '#".$this->id."'
+    bindto: '#".$this->id."',
+    tooltip: {
+        format: {
+            value: function (name, ratio, id, index) {
+                var gerundet = Math.round(ratio * 10000) / 10000;
+                return (gerundet*100).toFixed(2) + '%';
+            }
+        }
+    }
 });
             </script>
         ";
