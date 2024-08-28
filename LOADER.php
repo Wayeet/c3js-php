@@ -7,4 +7,5 @@ require_once "LineChart.php";
 require_once "TimeseriesChart.php";
 require_once "SplineChart.php";
 require_once "StackedAreaChart.php";
+require_once "CombinationChart.php";
 ?>
