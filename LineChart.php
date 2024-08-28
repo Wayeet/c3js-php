@@ -2,8 +2,8 @@
 class LineChart extends UIChart {
 
     public string $id;
-    private array $data;
-    private bool $showToolTip;
+    public array $data;
+    public bool $showToolTip;
 
     public function __construct(string $id, array $data, bool $showToolTip = false)
     {

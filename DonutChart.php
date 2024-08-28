@@ -2,8 +2,8 @@
 class DonutChart extends UIChart {
 
     public string $id;
-    private array $data;
-    private bool $showToolTip;
+    public array $data;
+    public bool $showToolTip;
     public string $title;
 
     public function __construct(string $id, array $data, string $innerTitle, bool $showToolTip = false)

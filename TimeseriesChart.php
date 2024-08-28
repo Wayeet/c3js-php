@@ -2,10 +2,10 @@
 class TimeseriesChart extends UIChart {
 
     public string $id;
-    private array $data;
-    private string $timeRowNameInData;
-    private string $timeRowFormat;
-    private string $dateDisplayFormat;
+    public array $data;
+    public string $timeRowNameInData;
+    public string $timeRowFormat;
+    public string $dateDisplayFormat;
 
     public function __construct(string $id, array $data, string $timeRowNameInData, string $timeRowFormat, string $dateDisplayFormat)
     {

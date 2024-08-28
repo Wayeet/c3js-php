@@ -2,7 +2,7 @@
 class StackedAreaChart extends UIChart {
 
     public string $id;
-    private array $data;
+    public array $data;
     public array $groups; 
 
     public function __construct(string $id, array $data, array $groups)
