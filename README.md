@@ -1,4 +1,2 @@
 # c3js-php
-
-
-PHP Wrapper für C3js based on D3
+PHP Wrapper für C3js based on D3 by @Wayeet
