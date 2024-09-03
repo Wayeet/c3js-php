@@ -10,8 +10,8 @@ class BarChart extends UIChart {
 
     /**
      * @param string $id The HTML "id"-Tag
-     * @param array $data Data in the format shown in chart.data.columns -> https://c3js.org/samples/chart_bar.html.
-     * @param bool $showToolTip Whether to show a tooltip on the chart
+     * @param array $data Data in the format shown in chart.data.columns -> https://c3js.org/samples/chart_bar.html
+     * @param bool $showToolTip Whether to show a tooltip on the chart (default=false)
      */
     public function __construct(string $id, array $data, bool $showToolTip = false)
     {

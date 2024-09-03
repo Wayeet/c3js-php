@@ -1,25 +1,33 @@
 <?php
+
+/**
+ * Represents a SplineChart (https://c3js.org/samples/chart_spline.html)
+ */
 class SplineChart extends UIChart {
 
     public string $id;
     protected array $data;
 
+    /**
+     * @param string $id The HTML "id"-Tag
+     * @param array $data Data in the format shown in chart.data.columns -> https://c3js.org/samples/simple_multiple.html
+     */
     public function __construct(string $id, array $data)
     {
         $this->id = $id;
-
-        //FORMAT von $data
-        // $data = [
-        //     ['data1', 30, 200, 100, 400, 150, 250],
-        //     ['data2', 50, 20, 10, 40, 15, 25]
-        // ];
         $this->data = $data;
     }
-
+    /**
+     * Renders the charts wrapper-element
+     * @return void
+     */
     public function preRender(){
         echo '<div id="'.$this->id.'"></div>';
     }
-    
+    /**
+     * Render the chart to the wrapper
+     * @return void
+     */
     public function render() {
         $jsonString = json_encode($this->data);
         echo "
