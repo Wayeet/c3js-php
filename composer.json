@@ -8,5 +8,13 @@
     },
     "require": {
         "php": "*"
-    }
+    },
+    "keywords": ["d3", "c3", "charts", "PHP"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Björn Roos",
+            "email": "kontakt@bjoern-roos.com"
+        }
+    ]
 }
