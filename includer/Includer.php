@@ -1,5 +1,5 @@
 <?php
-namespace Includer;
+namespace Util;
 /**
  * Can be used to import the correct versions of d3 and c3
  */
