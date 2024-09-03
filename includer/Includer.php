@@ -13,35 +13,38 @@ class Includer {
         $this->dir = $dir;
     }
 
-    private function getCWD(){
-        return $this->dir.'/vendor/wayeet/c3js-php/includer';
-    }
-    /**
-     * Imports required CSS files
-     * @return void This injects the imports directly to html
-     */
-    public function includeCSS(){
-        echo '
-        <link href="'.$this->getCWD().'/c3-0.7.20/c3.css" rel="stylesheet">
-        ';
-    }
-    /**
-     * Imports required JS files
-     * @return void This injects the imports directly to html
-    */
-    public function includeJS(){
-        echo '
-        <script src="'.$this->getCWD().'/c3-0.7.20/c3.min.js"></script>
-        <script src="'.$this->getCWD().'/d3v5/d3.min.js" charset="utf-8"></script>
-        ';
-    }
     /**
      * Imports all required files at once
-     * @return void This injects the imports directly to html
+     * @return void This injects the content directly to html
     */
     public function includeALL(){
-        $this->includeCSS();
-        $this->includeJS();
+        $this->openStyleTag();
+        include_once __DIR__ . "/c3-0.7.20/c3.css";
+        $this->closeStyleTag();
+        $this->openScriptTag();
+        include_once __DIR__ . "/c3-0.7.20/c3.min.js";
+        $this->closeScriptTag();
+        $this->openScriptTag();
+        include_once __DIR__ . "/d3v5/d3.min.js";
+        $this->closeScriptTag();
+        echo '
+        ';
+    }
+    
+    private function openStyleTag(){
+        echo "<style>";
+    }
+
+    private function closeStyleTag(){
+        echo "</style>";
+    }
+
+    private function openScriptTag(){
+        echo "<script>";
+    }
+
+    private function closeScriptTag(){
+        echo "</script>";
     }
 }
 ?>
