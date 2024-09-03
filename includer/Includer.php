@@ -4,14 +4,7 @@ namespace Util;
  * Can be used to import the correct versions of d3 and c3
  */
 class Includer {
-    private $dir;
-
-    /**
-     * @param string $dir Pass the __DIR__ global
-     */
-    public function __construct(string $dir){
-        $this->dir = $dir;
-    }
+    public function __construct(){}
 
     /**
      * Imports all required files at once
