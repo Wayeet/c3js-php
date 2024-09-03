@@ -16,5 +16,6 @@
             "name": "Björn Roos",
             "email": "kontakt@bjoern-roos.com"
         }
-    ]
+    ],
+    "minimum-stability": "alpha"
 }
