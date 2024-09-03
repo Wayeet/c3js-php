@@ -1,4 +1,5 @@
 <?php
+namespace C3Charts;
 /**
  * Represents a StackedAreaChart (https://c3js.org/samples/chart_area_stacked.html)
  */

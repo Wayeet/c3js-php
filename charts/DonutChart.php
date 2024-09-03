@@ -1,4 +1,5 @@
 <?php
+namespace C3Charts;
 /**
  * Represents a DonutChart (https://c3js.org/samples/chart_donut.html)
  */

@@ -1,6 +1,11 @@
 {
     "name": "wayeet/c3js-php",
     "description": "A wrapper library for c3js to use it synchronously from php (all versions)",
+    "autoload": {
+        "psr-4": {
+            "C3Charts\\": "charts/"
+        }
+    },
     "require": {
         "php": "*"
     }

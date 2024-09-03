@@ -1,4 +1,5 @@
 <?php
+namespace C3Charts;
 /**
  * Represents a TimeseriesChart (https://c3js.org/samples/timeseries.html)
  */

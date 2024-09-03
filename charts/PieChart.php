@@ -1,4 +1,5 @@
 <?php
+namespace C3Charts;
 /**
  * Represents a PieChart (https://c3js.org/samples/simple_multiple.html)
  */
